@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VOCE STORE — Todos nuestros canales</title>
+<meta name="description" content="Encuentra a VOCE STORE en Falabella, Ripley, WhatsApp y nuestra tienda online.">
+<link rel="icon" href="logo-voce.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0e0e0e;
+    --surface:#19191a;
+    --surface-2:#151515;
+    --border:#2a2a2a;
+    --text:#f2f1ec;
+    --muted:#9a9a93;
+    --falabella:#aad500;
+    --ripley:#e4032e;
+    --whatsapp:#25d366;
+    --web:#f2f1ec;
+  }
+
+  *{ box-sizing:border-box; }
+
+  html,body{
+    margin:0;
+    padding:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+  }
+
+  body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    padding:48px 20px 40px;
+  }
+
+  main{
+    width:100%;
+    max-width:420px;
+  }
+
+  .hero{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    margin-bottom:34px;
+  }
+
+  .hero img{
+    width:112px;
+    height:112px;
+    object-fit:cover;
+    border-radius:16px;
+    border:1px solid var(--border);
+  }
+
+  .hero h1{
+    font-family:'Bebas Neue',sans-serif;
+    font-weight:400;
+    font-size:34px;
+    letter-spacing:0.5px;
+    margin:18px 0 4px;
+    line-height:1;
+  }
+
+  .hero p{
+    margin:0;
+    color:var(--muted);
+    font-size:14px;
+  }
+
+  nav{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+
+  a.link{
+    position:relative;
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:12px 16px 12px 14px;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:12px;
+    text-decoration:none;
+    color:var(--text);
+    overflow:hidden;
+    transition:border-color .15s ease, transform .15s ease;
+  }
+
+  a.link:active{
+    transform:scale(0.98);
+  }
+
+  a.link:hover{
+    border-color:#3c3c3c;
+  }
+
+  a.link::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    width:3px;
+    background:var(--accent);
+  }
+
+  .icon-tile{
+    flex:none;
+    width:52px;
+    height:52px;
+    border-radius:9px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+  }
+
+  .icon-tile img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+  }
+
+  .icon-tile.web{
+    background:var(--surface-2);
+    border:1px solid var(--border);
+  }
+
+  .icon-tile.web svg{
+    width:24px;
+    height:24px;
+    stroke:var(--text);
+  }
+
+  .icon-tile.falabella{ background:#fafafa; }
+  .icon-tile.ripley{ background:#1a1a1a; border:1px solid var(--border); }
+  .icon-tile.whatsapp{ background:#eeeeee; }
+
+  .icon-tile.falabella img{ padding:10px; }
+  .icon-tile.ripley img{ padding:6px; }
+  .icon-tile.whatsapp img{ padding:8px; }
+
+  .link-copy{
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+    min-width:0;
+  }
+
+  .link-copy .title{
+    font-size:15px;
+    font-weight:600;
+  }
+
+  .link-copy .subtitle{
+    font-size:12.5px;
+    color:var(--muted);
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+
+  .chevron{
+    margin-left:auto;
+    flex:none;
+    width:18px;
+    height:18px;
+    stroke:var(--muted);
+  }
+
+  footer{
+    text-align:center;
+    margin-top:36px;
+    color:var(--muted);
+    font-size:12px;
+  }
+
+  footer a{
+    color:var(--muted);
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <div class="hero">
+    <img src="logo-voce.png" alt="VOCE STORE">
+    <h1>VOCE STORE</h1>
+    <p>La mejor tienda de Polos Oversize del Perú</p>
+  </div>
+
+  <nav>
+
+    <a class="link" style="--accent:var(--web)" href="https://www.vocestore.com.pe" target="_blank" rel="noopener">
+      <span class="icon-tile web">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9.5 12 3l9 6.5"/>
+          <path d="M5 9v11h14V9"/>
+          <path d="M9.5 20v-6h5v6"/>
+        </svg>
+      </span>
+      <span class="link-copy">
+        <span class="title">Tienda online</span>
+        <span class="subtitle">Catálogo completo en vocestore.com.pe</span>
+      </span>
+      <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+    </a>
+
+    <a class="link" style="--accent:var(--falabella)" href="https://www.falabella.com.pe/falabella-pe/seller/VOCE%20STORE" target="_blank" rel="noopener">
+      <span class="icon-tile falabella">
+        <img src="icon-falabella.png" alt="Falabella">
+      </span>
+      <span class="link-copy">
+        <span class="title">Falabella</span>
+        <span class="subtitle">Compra segura en falabella.com.pe</span>
+      </span>
+      <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+    </a>
+
+    <a class="link" style="--accent:var(--ripley)" href="https://simple.ripley.com.pe/tienda/voce-store-6049941?type=catalog" target="_blank" rel="noopener">
+      <span class="icon-tile ripley">
+        <img src="icon-ripley.png" alt="Ripley">
+      </span>
+      <span class="link-copy">
+        <span class="title">Ripley</span>
+        <span class="subtitle">Catálogo oficial en Ripley</span>
+      </span>
+      <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+    </a>
+
+    <a class="link" style="--accent:var(--whatsapp)" href="https://wa.me/51965165095?text=Hola%20quisiera%20informacion%20de%20sus%20productos%20" target="_blank" rel="noopener">
+      <span class="icon-tile whatsapp">
+        <img src="icon-whatsapp.png" alt="WhatsApp">
+      </span>
+      <span class="link-copy">
+        <span class="title">WhatsApp</span>
+        <span class="subtitle">Consultas sobre nuestros productos</span>
+      </span>
+      <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+    </a>
+
+    <a class="link" style="--accent:var(--whatsapp)" href="https://wa.me/51965165095?text=Hola%20quiero%20hacer%20polos%20oversize%20personalizados" target="_blank" rel="noopener">
+      <span class="icon-tile whatsapp">
+        <img src="icon-whatsapp.png" alt="WhatsApp">
+      </span>
+      <span class="link-copy">
+        <span class="title">Polos personalizados</span>
+        <span class="subtitle">Pide tu diseño oversize a medida</span>
+      </span>
+      <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+    </a>
+
+  </nav>
+
+  <footer>
+    VOCE STORE · Lima, Perú
+  </footer>
+
+</main>
+</body>
+</html>
